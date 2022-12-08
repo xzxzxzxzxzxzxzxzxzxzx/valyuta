@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style1.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="up-side">
+        <div class="logo">
+          <img src="img/bankIcon.svg" alt="" class="logo" />
+        </div>
+        <div class="text">
+          <div class="menuItem">БАНК</div>
+          <div class="menuItem">БИЗНЕС</div>
+          <div class="menuItem">ИНВЕСТИЦИИ</div>
+          <div class="menuItem">СТРАХОВАНИЕ</div>
+          <div class="menuItem">МОБАЙЛ</div>
+          <div class="menuItem">ПУТЕШЕСТВИЯ</div>
+          <div class="menuItem">РАЗВЛЕЧЕНИЯ</div>
+        </div>
+        <button class="login">
+          <p>ВОЙТИ</p>
+        </button>
+
+        <button class="hamburger">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
+      </div>
+
+      <div class="down-side">
+        <div class="main-text">Конвертер валют онлайн</div>
+        <div class="converter-div">
+          <div class="left-converter">
+            <div class="left-text">У меня есть</div>
+            <div class="left-currency">
+              <button class="active">RUB</button>
+              <button>USD</button>
+              <button>EUR</button>
+              <button>GBP</button>
+            </div>
+            <div class="input-text">
+              <input
+                type="text"
+                placeholder="Add value"
+                id="input1"
+                value="1"
+                required
+              />
+              <p>1 RUB = 0.0135 USD</p>
+            </div>
+          </div>
+          <div class="right-converter">
+            <div class="right-text">Хочу приобрести</div>
+            <div class="right-currency">
+              <button>RUB</button>
+              <button class="active">USD</button>
+              <button>EUR</button>
+              <button>GBP</button>
+            </div>
+            <div class="input-text1">
+              <input
+                type="text"
+                placeholder="Add value"
+                id="input2"
+                value="1"
+                required
+              />
+              <p>1 USD = 73.8896 RUB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/imask.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
